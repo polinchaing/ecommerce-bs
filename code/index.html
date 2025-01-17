@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rami AutoShop - Your trusted destination for car sales and rentals. Explore a wide range of vehicles at unbeatable prices."
+    />
+    <meta
+      name="keywords"
+      content="car sales, car rentals, buy cars, rent cars, auto shop, vehicles, Rami AutoShop"
+    />
+    <meta name="author" content="Rami AutoShop" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#007bff" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <title>Rami AutoShop</title>
+  </head>
+  <body>
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-0 bg-dark sticky-top"
+    >
+      <div class="d-flex align-items-center col-12 col-md-3 mb-2 mb-md-0">
+        <a
+          href="/"
+          class="d-inline-flex link-body-emphasis text-decoration-none"
+        >
+          <img
+            src="/picture/logo.jpg"
+            class="img-fluid rounded-circle"
+            style="max-height: 60px; width: 60px; object-fit: cover"
+            alt="Logo"
+          />
+        </a>
+        <span class="ms-2 text-white fs-5">Rami AutoShop</span>
+      </div>
+
+      <!-- Desktop Navbar -->
+      <ul
+        class="nav col-6 col-md-auto mb-2 justify-content-center mb-md-0 gap-5 d-none d-md-flex"
+      >
+        <li>
+          <a href="/code/index.html" class="nav-link px-2 text-white fs-5"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="/code/AboutUs.html" class="nav-link px-2 text-secondary fs-5"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a href="/code/Brands.html" class="nav-link px-2 text-white fs-5"
+            >Brands</a
+          >
+        </li>
+        <li>
+          <a href="/code/ContactUs.html" class="nav-link px-2 text-white fs-5"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+
+      <!-- Dropdown for smaller screens -->
+      <div class="dropdown d-md-none ms-3">
+        <button
+          class="btn btn-outline-light"
+          type="button"
+          id="navbarDropdown"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars fs-4"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="/code/index.html">Home</a></li>
+          <li>
+            <a class="dropdown-item" href="/code/AboutUs.html">About Us</a>
+          </li>
+          <li><a class="dropdown-item" href="/code/Brands.html">Brands</a></li>
+          <li>
+            <a class="dropdown-item" href="/code/ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Search Bar -->
+      <div
+        class="col-6 col-md-2 d-flex justify-content-center justify-content-md-end px-3"
+      >
+        <input
+          type="search"
+          class="form-control form-control-sm w-100 rounded-pill border-0"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero section with container -->
+      <section>
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1: McLaren Charlotte -->
+            <div class="carousel-item active">
+              <div class="container py-5">
+                <div class="row align-items-center g-4">
+                  <div class="col-12 col-md-6">
+                    <img
+                      src="/picture/mclaren.png"
+                      class="d-block w-100 img-fluid rounded"
+                      alt="McLaren Charlotte"
+                      loading="lazy"
+                      style="max-height: 400px; object-fit: cover"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                      McLaren Charlotte: A Masterpiece of Engineering
+                    </h1>
+                    <p class="lead">
+                      720 hp, 4.0L twin-turbo V8 engine, 7-speed dual-clutch
+                      transmission, active aerodynamics, 0-60 mph in 2.8
+                      seconds, top speed of 212 mph. Carbon-fiber monocoque
+                      chassis ensures lightweight precision.
+                    </p>
+                    <p class="text-success fw-bold">
+                      Available Now at Our Shop!
+                    </p>
+                    <div
+                      class="d-grid gap-2 d-md-flex justify-content-md-start"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-lg px-4 me-md-2"
+                      >
+                        Book Now
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg px-4"
+                      >
+                        See Detail
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Lamborghini Aventador SVJ 63 -->
+            <div class="carousel-item">
+              <div class="container py-5">
+                <div class="row align-items-center g-4">
+                  <div class="col-12 col-md-6">
+                    <img
+                      src="/picture/lambo.png"
+                      class="d-block w-100 img-fluid rounded"
+                      alt="Lamborghini Aventador SVJ 63"
+                      loading="lazy"
+                      style="max-height: 400px; object-fit: cover"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                      Lamborghini Aventador SVJ 63: Limited-Edition Excellence
+                    </h1>
+                    <p class="lead">
+                      770 hp, 6.5L naturally aspirated V12 engine, 7-speed ISR
+                      transmission, active Lamborghini Dinamica Veicolo Attiva
+                      (LDVA) 2.0 system, 0-60 mph in 2.6 seconds, top speed of
+                      217 mph. Carbon-fiber body and exclusive SVJ 63 edition
+                      styling.
+                    </p>
+                    <p class="text-success fw-bold">
+                      Available Now at Our Shop!
+                    </p>
+                    <div
+                      class="d-grid gap-2 d-md-flex justify-content-md-start"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-lg px-4 me-md-2"
+                      >
+                        Book Now
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg px-4"
+                      >
+                        See Detail
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Ferrari FXX K Evo -->
+            <div class="carousel-item">
+              <div class="container py-5">
+                <div class="row align-items-center g-4">
+                  <div class="col-12 col-md-6">
+                    <img
+                      src="/picture/ferrari.png"
+                      class="d-block w-100 img-fluid rounded"
+                      alt="Ferrari FXX K Evo"
+                      loading="lazy"
+                      style="max-height: 400px; object-fit: cover"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                      Ferrari FXX K Evo: Track-Only Perfection
+                    </h1>
+                    <p class="lead">
+                      1,036 hp, 6.3L hybrid V12 engine with KERS (Kinetic Energy
+                      Recovery System), aerodynamic enhancements, top speed of
+                      217 mph, track-focused suspension, and an advanced
+                      telemetry system for professional data analysis. Exclusive
+                      to track use only.
+                    </p>
+                    <p class="text-success fw-bold">
+                      Available Now at Our Shop!
+                    </p>
+                    <div
+                      class="d-grid gap-2 d-md-flex justify-content-md-start"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-lg px-4 me-md-2"
+                      >
+                        Book Now
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg px-4"
+                      >
+                        See Detail
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="why-choose" class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center">
+            <h2>Our Key Features</h2>
+            <p class="lead">
+              At CarStore, we are committed to making your car-buying experience
+              as seamless and stress-free as possible. With a range of
+              exceptional features, we ensure that you get the best value,
+              security, and service every step of the way.
+            </p>
+            <p>
+              Explore some of the key benefits that set us apart from the
+              competition and make your car purchase journey a smooth and
+              enjoyable one.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- features section -->
+      <section id="features" class="py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Feature 1: 24/7 Support -->
+            <div class="col-md-4 d-flex mb-4">
+              <div class="card shadow-sm border-light w-100">
+                <div class="position-relative" style="height: 300px">
+                  <img
+                    src="/picture/carsv.webp"
+                    class="card-img-top img-fluid position-absolute top-0 start-0 w-100 h-100"
+                    alt="24/7 Support"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">24/7 Support</h5>
+                  <p class="card-text">
+                    Our customer service team is always here to help with any
+                    questions or concerns you may have.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature 2: Secure Payments -->
+            <div class="col-md-4 d-flex mb-4">
+              <div class="card shadow-sm border-light w-100">
+                <div class="position-relative" style="height: 300px">
+                  <img
+                    src="/picture/sp.jpg"
+                    class="card-img-top img-fluid position-absolute top-0 start-0 w-100 h-100"
+                    alt="Secure Payments"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Secure Payments</h5>
+                  <p class="card-text">
+                    We offer a secure, hassle-free payment process for your
+                    peace of mind when purchasing your vehicle.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature 3: Delivery Service -->
+            <div class="col-md-4 d-flex mb-4">
+              <div class="card shadow-sm border-light w-100">
+                <div class="position-relative" style="height: 300px">
+                  <img
+                    src="/picture/cardv.png"
+                    class="card-img-top img-fluid position-absolute top-0 start-0 w-100 h-100"
+                    alt="Delivery Service"
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Free Delivery</h5>
+                  <p class="card-text">
+                    We offer free delivery right to your doorstep, making the
+                    car-buying process even more convenient.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Services Section -->
+      <section id="services" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-4">Our Professional Services</h2>
+            <p class="lead">
+              Innovative and high-quality services designed to meet all your
+              automotive needs.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Card Template -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div
+                class="card shadow-lg border-0 rounded-3 overflow-hidden h-100"
+              >
+                <img
+                  src="/picture/carsale.png"
+                  class="card-img-top"
+                  alt="Car Sales"
+                  style="height: 250px; object-fit: cover"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-3">Car Sales</h5>
+                  <p class="card-text">
+                    Explore our extensive collection of premium new and used
+                    vehicles at unbeatable prices. Your dream car is waiting for
+                    you!
+                  </p>
+                  <a href="#" class="btn btn-primary">Discover More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div
+                class="card shadow-lg border-0 rounded-3 overflow-hidden h-100"
+              >
+                <img
+                  src="/picture/flexible.png"
+                  class="card-img-top"
+                  alt="Flexible Financing"
+                  style="height: 250px; object-fit: cover"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-3">Flexible Financing</h5>
+                  <p class="card-text">
+                    We offer a variety of financing options to help you get into
+                    your new car. Easy approval and flexible terms await you.
+                  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div
+                class="card shadow-lg border-0 rounded-3 overflow-hidden h-100"
+              >
+                <img
+                  src="/picture/repair.jpg"
+                  class="card-img-top"
+                  alt="Maintenance & Repairs"
+                  style="height: 250px; object-fit: cover"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-3">Maintenance & Repairs</h5>
+                  <p class="card-text">
+                    Keep your vehicle in top condition with professional
+                    maintenance services, from oil changes to major repairs.
+                  </p>
+                  <a href="#" class="btn btn-primary">Schedule Service</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div
+                class="card shadow-lg border-0 rounded-3 overflow-hidden h-100"
+              >
+                <img
+                  src="/picture/carcustom.avif"
+                  class="card-img-top"
+                  alt="Car Customization"
+                  style="height: 250px; object-fit: cover"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-3">Car Customization</h5>
+                  <p class="card-text">
+                    Personalize your car with custom parts and accessories. From
+                    interior upgrades to exterior modifications, make your car
+                    truly yours.
+                  </p>
+                  <a href="#" class="btn btn-primary">Customize Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div
+                class="card shadow-lg border-0 rounded-3 overflow-hidden h-100"
+              >
+                <img
+                  src="/picture/carrent.jpg"
+                  class="card-img-top"
+                  alt="Car Rental"
+                  style="height: 250px; object-fit: cover"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-3">Car Rental</h5>
+                  <p class="card-text">
+                    Need a car for a trip or special event? Our rental service
+                    offers a fleet of high-quality cars, perfect for any
+                    occasion.
+                  </p>
+                  <a href="#" class="btn btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div
+                class="card shadow-lg border-0 rounded-3 overflow-hidden h-100"
+              >
+                <img
+                  src="/picture/road.webp"
+                  class="card-img-top"
+                  alt="Roadside Assistance"
+                  style="height: 250px; object-fit: cover"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-3">Roadside Assistance</h5>
+                  <p class="card-text">
+                    In case of emergencies, our roadside assistance team is just
+                    a call away. We ensure your peace of mind wherever you go.
+                  </p>
+                  <a href="#" class="btn btn-primary">Get Help</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer Reviews Section-->
+      <section id="reviews" class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2>What Our Customers Say</h2>
+            <p class="lead">Real experiences from our valued customers</p>
+          </div>
+          <div
+            id="reviewCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- Review 1 -->
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <div class="card p-4" style="max-width: 600px; width: 100%">
+                    <p class="card-text">
+                      "Amazing service! I found exactly the car I was looking
+                      for, and the whole process was seamless from start to
+                      finish."
+                    </p>
+                    <div class="d-flex justify-content-center">
+                      <span class="badge bg-primary text-white"
+                        >Cheng Devith.</span
+                      >
+                      <span class="ms-2 text-muted">Phnom penh</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 2 -->
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="card p-4" style="max-width: 600px; width: 100%">
+                    <p class="card-text">
+                      "The team was so helpful in guiding me through the
+                      financing options, and they made everything feel easy and
+                      straightforward."
+                    </p>
+                    <div class="d-flex justify-content-center">
+                      <span class="badge bg-primary text-white"
+                        >Chao Vanthoung.</span
+                      >
+                      <span class="ms-2 text-muted">Battambang</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 3 -->
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="card p-4" style="max-width: 600px; width: 100%">
+                    <p class="card-text">
+                      "Fantastic customer support! I was in and out with my new
+                      car in no time. Couldn't have asked for a better
+                      experience."
+                    </p>
+                    <div class="d-flex justify-content-center">
+                      <span class="badge bg-primary text-white">MengChu.</span>
+                      <span class="ms-2 text-muted">Siemreap</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#reviewCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#reviewCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Subscription Section -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <!-- Text Content and Form -->
+            <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+              <h2 class="font-semibold text-4xl text-dark">
+                Join our mailing list!
+              </h2>
+              <span class="block mt-3 text-muted"
+                >Stay updated on all news that's happening in the world of
+                cars.</span
+              >
+
+              <!-- Subscription Form -->
+              <form class="mt-4 position-relative">
+                <input
+                  class="form-control rounded-pill px-4 py-2"
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="position-absolute top-50 end-0 translate-middle-y btn btn-primary rounded-pill p-2"
+                >
+                  <i class="bi bi-arrow-right"></i>
+                  <!-- Bootstrap icon for arrow -->
+                </button>
+              </form>
+
+              <!-- Terms and Conditions List -->
+              <ul class="mt-4">
+                <li class="d-flex align-items-center mb-2">
+                  <span class="badge bg-info text-dark rounded-pill me-2"
+                    >01</span
+                  >
+                  <span class="text-muted"
+                    >By clicking subscribe, you agree to receive news,
+                    promotions, and offers by email from Rami AutoShop.</span
+                  >
+                </li>
+                <li class="d-flex align-items-center">
+                  <span class="badge bg-danger text-white rounded-pill me-2"
+                    >02</span
+                  >
+                  <span class="text-muted"
+                    >Your information will be used in accordance with our
+                    privacy policy.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-12 col-lg-7">
+              <img
+                src="https://f1rst-motors.s3.me-central-1.amazonaws.com/static/laferrarinewsletter.png"
+                alt="F1rst Motors"
+                class="img-fluid rounded-3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white py-3">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <!-- Logo and Company Info -->
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start mb-2 mb-md-0"
+          >
+            <div class="d-flex align-items-center">
+              <img
+                src="/picture/logo.jpg"
+                alt="Rami Autoshop Logo"
+                class="img-fluid rounded-circle"
+                style="max-height: 50px"
+              />
+              <span class="ms-3 fs-6">© 2021 Rami Autoshop, inc</span>
+            </div>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end"
+          >
+            <ul class="list-unstyled d-flex gap-3 mb-0">
+              <!-- Twitter Icon -->
+              <li>
+                <a
+                  href="#"
+                  class="text-white fs-4"
+                  title="Follow us on Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <!-- Instagram Icon-->
+              <li>
+                <a
+                  href="#"
+                  class="text-white fs-4"
+                  title="Follow us on Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <!-- Facebook Icon -->
+              <li>
+                <a
+                  href="#"
+                  class="text-white fs-4"
+                  title="Follow us on Facebook"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

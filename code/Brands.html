@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rami AutoShop - Your trusted destination for car sales and rentals. Explore a wide range of vehicles at unbeatable prices."
+    />
+    <meta
+      name="keywords"
+      content="car sales, car rentals, buy cars, rent cars, auto shop, vehicles, Rami AutoShop"
+    />
+    <meta name="author" content="Rami AutoShop" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#007bff" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <title>Rami AutoShop</title>
+  </head>
+  <body>
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-0 bg-dark sticky-top"
+    >
+      <div class="d-flex align-items-center col-12 col-md-3 mb-2 mb-md-0">
+        <a
+          href="/"
+          class="d-inline-flex link-body-emphasis text-decoration-none"
+        >
+          <img
+            src="/picture/logo.jpg"
+            class="img-fluid rounded-circle"
+            style="max-height: 60px; width: 60px; object-fit: cover"
+            alt="Logo"
+          />
+        </a>
+        <span class="ms-2 text-white fs-5">Rami AutoShop</span>
+      </div>
+
+      <!-- Desktop Navbar -->
+      <ul
+        class="nav col-6 col-md-auto mb-2 justify-content-center mb-md-0 gap-5 d-none d-md-flex"
+      >
+        <li>
+          <a href="/code/index.html" class="nav-link px-2 text-white fs-5"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="/code/AboutUs.html" class="nav-link px-2 text-secondary fs-5"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a href="/code/Brands.html" class="nav-link px-2 text-white fs-5"
+            >Brands</a
+          >
+        </li>
+        <li>
+          <a href="/code/ContactUs.html" class="nav-link px-2 text-white fs-5"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+
+      <!-- Dropdown for smaller screens -->
+      <div class="dropdown d-md-none ms-3">
+        <button
+          class="btn btn-outline-light"
+          type="button"
+          id="navbarDropdown"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars fs-4"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="/code/index.html">Home</a></li>
+          <li>
+            <a class="dropdown-item" href="/code/AboutUs.html">About Us</a>
+          </li>
+          <li><a class="dropdown-item" href="/code/Brands.html">Brands</a></li>
+          <li>
+            <a class="dropdown-item" href="/code/ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Search Bar -->
+      <div
+        class="col-6 col-md-2 d-flex justify-content-center justify-content-md-end px-3"
+      >
+        <input
+          type="search"
+          class="form-control form-control-sm w-100 rounded-pill border-0"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+      </div>
+    </header>
+    <main>
+      <main>
+        <!-- Hero Section -->
+        <section class="py-5 bg-dark text-white text-center" style="background: url('/mnt/data/A_group_of_luxury_cars_displayed_in_an_elegant_sho.png') no-repeat center center/cover;">
+          <div class="container">
+            <h1 class="display-4 fw-bold">Welcome to Rami AutoShop</h1>
+            <p class="lead">Your one-stop destination for car sales and rentals</p>
+            <a href="#features" class="btn btn-primary btn-lg">Explore Now</a>
+          </div>
+        </section>
+
+      <!-- Top Brands Section -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-4">Top Car Brands</h2>
+          <div
+            id="brandsCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row text-center">
+                  <div class="col-md-4">
+                    <img
+                      src="/path/to/brand1.jpg"
+                      alt="Brand 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="/path/to/brand2.jpg"
+                      alt="Brand 2"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="/path/to/brand3.jpg"
+                      alt="Brand 3"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row text-center">
+                  <div class="col-md-4">
+                    <img
+                      src="/path/to/brand4.jpg"
+                      alt="Brand 4"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="/path/to/brand5.jpg"
+                      alt="Brand 5"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="/path/to/brand6.jpg"
+                      alt="Brand 6"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#brandsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#brandsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Buy or Rent Cars</h2>
+          <div class="row g-4">
+            <div class="col-md-6 text-center">
+              <i class="bi bi-cart-fill display-4 text-primary mb-3"></i>
+              <h5 class="fw-bold">Buy Cars</h5>
+              <p>
+                Own your dream car with unbeatable prices and flexible financing
+                options.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <i class="bi bi-key-fill display-4 text-primary mb-3"></i>
+              <h5 class="fw-bold">Rent Cars</h5>
+              <p>
+                Wide selection of rental cars for your next adventure or
+                business trip.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- All Car Models Section -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">All Car Models</h2>
+          <div class="row g-4">
+            <!-- Row 1 -->
+            <div class="col-md-4">
+              <img
+                src="/path/to/car1.jpg"
+                class="img-fluid rounded"
+                alt="Car Model 1"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/path/to/car2.jpg"
+                class="img-fluid rounded"
+                alt="Car Model 2"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/path/to/car3.jpg"
+                class="img-fluid rounded"
+                alt="Car Model 3"
+              />
+            </div>
+            <!-- Row 2 -->
+            <div class="col-md-4">
+              <img
+                src="/path/to/car4.jpg"
+                class="img-fluid rounded"
+                alt="Car Model 4"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/path/to/car5.jpg"
+                class="img-fluid rounded"
+                alt="Car Model 5"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/path/to/car6.jpg"
+                class="img-fluid rounded"
+                alt="Car Model 6"
+              />
+            </div>
+            <!-- Row 3 -->
+            <div class="col-md-4">
+              <img
+                src="/path/to/car7.jpg"
+                class="img-fluid rounded"
+                alt="Car Model 7"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/path/to/car8.jpg"
+                class="img-fluid rounded"
+                alt="Car Model 8"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/path/to/car9.jpg"
+                class="img-fluid rounded"
+                alt="Car Model 9"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Premium Cars Section -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-4">Premium Cars</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <img
+                src="/path/to/premium1.jpg"
+                class="img-fluid rounded"
+                alt="Premium Car 1"
+              />
+              <p>Top Speed: 220 mph | Horsepower: 600 hp | Price: $100,000</p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/path/to/premium2.jpg"
+                class="img-fluid rounded"
+                alt="Premium Car 2"
+              />
+              <p>Top Speed: 200 mph | Horsepower: 550 hp | Price: $90,000</p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/path/to/premium3.jpg"
+                class="img-fluid rounded"
+                alt="Premium Car 3"
+              />
+              <p>Top Speed: 210 mph | Horsepower: 580 hp | Price: $95,000</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Rent Cars Section -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Rent a Car</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <img
+                src="/path/to/rent1.jpg"
+                class="img-fluid rounded"
+                alt="Rental Car 1"
+              />
+              <p>Affordable daily rates for economy cars.</p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/path/to/rent2.jpg"
+                class="img-fluid rounded"
+                alt="Rental Car 2"
+              />
+              <p>Spacious SUVs for family trips.</p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="/path/to/rent3.jpg"
+                class="img-fluid rounded"
+                alt="Rental Car 3"
+              />
+              <p>Luxury cars for special occasions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Discounts Section -->
+      <section class="py-5 bg-light">
+        <div class="container text-center">
+          <h2 class="mb-4">Special Discounts</h2>
+          <p class="fs-4 text-danger fw-bold">
+            Celebrate Chinese New Year with a 5% discount on all purchases!
+          </p>
+          <p class="fs-5">Additional offers:</p>
+          <ul class="list-unstyled">
+            <li>10% off on premium car rentals.</li>
+            <li>Flat $500 off on your first car purchase.</li>
+            <li>Special weekend discounts for SUV rentals.</li>
+          </ul>
+          <a href="#top" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
