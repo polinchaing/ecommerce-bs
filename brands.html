@@ -59,19 +59,15 @@
         class="nav col-6 col-md-auto mb-2 justify-content-center mb-md-0 gap-5 d-none d-md-flex"
       >
         <li>
-          <a href="index.html" class="nav-link px-2 text-white fs-5"
-            >Home</a
-          >
+          <a href="index.html" class="nav-link px-2 text-white fs-5">Home</a>
         </li>
         <li>
-          <a href="AboutUs.html" class="nav-link px-2 text-secondary fs-5"
+          <a href="AboutUs.html" class="nav-link px-2 text-white fs-5"
             >About Us</a
           >
         </li>
         <li>
-          <a href="Brands.html" class="nav-link px-2 text-white fs-5"
-            >Brands</a
-          >
+          <a href="Brands.html" class="nav-link px-2 text-secondary fs-5">Brands</a>
         </li>
         <li>
           <a href="ContactUs.html" class="nav-link px-2 text-white fs-5"
@@ -98,7 +94,7 @@
           </li>
           <li><a class="dropdown-item" href="Brands.html">Brands</a></li>
           <li>
-            <a class="dropdown-item" href="ContactUs.html">Contact Us</a>
+            <a class="dropdown-item" href="/code/ContactUs.html">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -116,286 +112,1181 @@
       </div>
     </header>
     <main>
-      <main>
-        <!-- Hero Section -->
-        <section class="py-5 bg-dark text-white text-center" style="background: url('/mnt/data/A_group_of_luxury_cars_displayed_in_an_elegant_sho.png') no-repeat center center/cover;">
-          <div class="container">
-            <h1 class="display-4 fw-bold">Welcome to Rami AutoShop</h1>
-            <p class="lead">Your one-stop destination for car sales and rentals</p>
-            <a href="#features" class="btn btn-primary btn-lg">Explore Now</a>
-          </div>
-        </section>
+      <!-- Hero Section: Our Trusted Car Brands -->
+      <section id="hero" class="bg-dark py-5">
+        <div class="container text-center">
+          <h2 class="display-4 mb-4 text-white fw-bold">
+            Our Trusted Car Brands
+          </h2>
 
-      <!-- Top Brands Section -->
-      <section class="py-5 bg-light">
-        <div class="container">
-          <h2 class="text-center mb-4">Top Car Brands</h2>
+          <!-- Carousel for New Text (Auto-Play) -->
           <div
-            id="brandsCarousel"
-            class="carousel slide"
+            id="textCarousel"
+            class="carousel slide mt-5"
             data-bs-ride="carousel"
+            data-bs-interval="3000"
           >
             <div class="carousel-inner">
+              <!-- Slide 1 -->
               <div class="carousel-item active">
-                <div class="row text-center">
-                  <div class="col-md-4">
-                    <img
-                      src="/path/to/brand1.jpg"
-                      alt="Brand 1"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="col-md-4">
-                    <img
-                      src="/path/to/brand2.jpg"
-                      alt="Brand 2"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="col-md-4">
-                    <img
-                      src="/path/to/brand3.jpg"
-                      alt="Brand 3"
-                      class="img-fluid"
-                    />
-                  </div>
+                <div class="bg-dark p-3 rounded shadow-lg">
+                  <p class="fs-5 text-light mb-3">
+                    We partner with the finest manufacturers to bring you
+                    top-tier vehicles. Experience luxury, performance, and
+                    reliability.
+                  </p>
                 </div>
               </div>
+              <!-- Slide 2 -->
               <div class="carousel-item">
-                <div class="row text-center">
-                  <div class="col-md-4">
-                    <img
-                      src="/path/to/brand4.jpg"
-                      alt="Brand 4"
-                      class="img-fluid"
-                    />
+                <div class="bg-dark p-3 rounded shadow-lg">
+                  <p class="fs-5 text-light mb-3">
+                    Our cars aren't just about getting you from point A to point
+                    B. They are about style, comfort, and passion for driving.
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="bg-dark p-3 rounded shadow-lg">
+                  <p class="fs-5 text-light mb-3">
+                    Explore a world of excellence with our premium cars. Each
+                    brand promises cutting-edge technology and innovative
+                    designs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car Brands Row -->
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-4">
+            <!-- Brand 1: Mercedes -->
+            <div class="col text-center">
+              <div
+                class="bg-white border border-secondary p-3 rounded shadow-lg d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/picture/merce.jpg"
+                  class="img-fluid"
+                  alt="Mercedes"
+                  style="max-width: 100px; height: 100px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <!-- Brand 2: Lamborghini -->
+            <div class="col text-center">
+              <div
+                class="bg-white border border-secondary p-3 rounded shadow-lg d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/picture/lamborghini-removebg-preview.png"
+                  class="img-fluid"
+                  alt="Lamborghini"
+                  style="max-width: 100px; height: 100px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <!-- Brand 3: Porsche -->
+            <div class="col text-center">
+              <div
+                class="bg-white border border-secondary p-3 rounded shadow-lg d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/picture/porsche.png"
+                  class="img-fluid"
+                  alt="Porsche"
+                  style="max-width: 100px; height: 100px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <!-- Brand 4: Ferrari -->
+            <div class="col text-center">
+              <div
+                class="bg-white border border-secondary p-3 rounded shadow-lg d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/picture/ferrarilogo.png"
+                  class="img-fluid"
+                  alt="Ferrari"
+                  style="max-width: 100px; height: 100px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <!-- Brand 5: Bugatti -->
+            <div class="col text-center">
+              <div
+                class="bg-white border border-secondary p-3 rounded shadow-lg d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/picture/bugatilogo.png"
+                  class="img-fluid"
+                  alt="Bugatti"
+                  style="max-width: 100px; height: 100px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <!-- Brand 6: McLaren -->
+            <div class="col text-center">
+              <div
+                class="bg-white border border-secondary p-3 rounded shadow-lg d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/picture/mclarenlogo.png"
+                  class="img-fluid"
+                  alt="McLaren"
+                  style="max-width: 100px; height: 100px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <!-- Brand 7: GTR -->
+            <div class="col text-center">
+              <div
+                class="bg-white border border-secondary p-3 rounded shadow-lg d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/picture/gtrlogo.png"
+                  class="img-fluid"
+                  alt="GTR"
+                  style="max-width: 100px; height: 100px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <!-- Brand 8: Toyota -->
+            <div class="col text-center">
+              <div
+                class="bg-white border border-secondary p-3 rounded shadow-lg d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/picture/toyota.jpg"
+                  class="img-fluid"
+                  alt="Toyota"
+                  style="max-width: 100px; height: 100px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <!-- Brand 9: Mazda -->
+            <div class="col text-center">
+              <div
+                class="bg-white border border-secondary p-3 rounded shadow-lg d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/picture/mazda.jpg"
+                  class="img-fluid"
+                  alt="Mazda"
+                  style="max-width: 100px; height: 100px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <!-- Brand 10: Ford -->
+            <div class="col text-center">
+              <div
+                class="bg-white border border-secondary p-3 rounded shadow-lg d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/picture/ford-removebg-preview.png"
+                  class="img-fluid"
+                  alt="Ford"
+                  style="max-width: 100px; height: 100px; object-fit: contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Brands Section -->
+      <section id="featured-brands" class="py-5 bg-light">
+        <div class="container text-center">
+          <h2 class="display-4 mb-4 text-dark fw-bold">Featured Brands</h2>
+          <p class="fs-5 text-muted mb-5">
+            Discover the most popular car brands. These brands stand out for
+            their performance, luxury, and innovation.
+          </p>
+
+          <!-- Featured Brands Row (3 brands: GTR, Porsche, Mercedes) -->
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4">
+            <!-- Brand 1: GTR -->
+            <div class="col text-center">
+              <div class="position-relative">
+                <img
+                  src="/picture/gtrcar.jpg"
+                  class="img-fluid rounded-3"
+                  alt="GTR"
+                  style="height: 300px; width: 100%; object-fit: cover"
+                />
+                <div
+                  class="position-absolute top-0 start-0 p-3 text-dark text-left"
+                >
+                  <h5 class="fs-4">GTR Skyline</h5>
+                </div>
+              </div>
+              <p class="mt-3 text-dark">
+                The Nissan GTR is known for its unbeatable speed and precision
+                on the track.
+              </p>
+            </div>
+
+            <!-- Brand 2: Porsche -->
+            <div class="col text-center">
+              <div class="position-relative">
+                <img
+                  src="/picture/porschecar.webp"
+                  class="img-fluid rounded-3"
+                  alt="Porsche"
+                  style="height: 300px; width: 100%; object-fit: cover"
+                />
+                <div
+                  class="position-absolute top-0 start-0 p-3 text-dark text-left"
+                >
+                  <h5 class="fs-4">Porsche 911 Turbo</h5>
+                </div>
+              </div>
+              <p class="mt-3 text-dark">
+                The Porsche 911 Turbo combines luxury and thrilling performance
+                with every turn.
+              </p>
+            </div>
+
+            <!-- Brand 3: Mercedes -->
+            <div class="col text-center">
+              <div class="position-relative">
+                <img
+                  src="/picture/mercar.webp"
+                  class="img-fluid rounded-3"
+                  alt="Mercedes"
+                  style="height: 300px; width: 100%; object-fit: cover"
+                />
+                <div
+                  class="position-absolute top-0 start-0 p-3 text-dark text-left"
+                >
+                  <h5 class="fs-4">Mercedes Benz S-Class</h5>
+                </div>
+              </div>
+              <p class="mt-3 text-dark">
+                The Mercedes S-Class is the epitome of luxury, offering
+                unmatched comfort and advanced technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Car Collection Section -->
+      <section id="car-collection" class="py-5 bg-light">
+        <div class="container">
+          <!-- Section Title -->
+          <div class="text-start mb-4">
+            <h2 class="display-4 fw-bold text-dark">Our Car Collection</h2>
+          </div>
+          <!-- Divider Line -->
+          <hr class="mb-5" />
+
+          <!-- Carousel for Car Collection -->
+          <div
+            id="carCollectionCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+          >
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <!-- Row 1 -->
+                  <div class="col">
+                    <div class="card h-100 shadow-sm">
+                      <img
+                        src="https://vehicle-images.dealerinspire.com/6690-11000429/W1K6G7GB4RA297048/a6e41f23635051c2ef351a4a3484cff9.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 1"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Mercedes S-Class</h5>
+                        <div class="d-flex justify-content-between">
+                          <p class="card-text text-muted mb-0">
+                            Starting Price
+                          </p>
+                          <p class="card-text text-muted mb-0">$120,000</p>
+                        </div>
+                        <div class="mt-auto text-end">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100 w-sm-auto"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-md-4">
-                    <img
-                      src="/path/to/brand5.jpg"
-                      alt="Brand 5"
-                      class="img-fluid"
-                    />
+                  <div class="col">
+                    <div class="card h-100 shadow-sm">
+                      <img
+                        src="https://bringatrailer.com/wp-content/uploads/2024/07/2024_porsche_911-carrera-gts-coupe_911-gts-3-06264.jpg?fit=940%2C627"
+                        class="card-img-top img-fluid"
+                        alt="Car 2"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Porsche 911 Turbo</h5>
+                        <div class="d-flex justify-content-between">
+                          <p class="card-text text-muted mb-0">
+                            Starting Price
+                          </p>
+                          <p class="card-text text-muted mb-0">$150,000</p>
+                        </div>
+                        <div class="mt-auto text-end">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100 w-sm-auto"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-md-4">
-                    <img
-                      src="/path/to/brand6.jpg"
-                      alt="Brand 6"
-                      class="img-fluid"
-                    />
+                  <div class="col">
+                    <div class="card h-100 shadow-sm">
+                      <img
+                        src="https://s1.cdn.autoevolution.com/images/news/gallery/r34-nissan-gt-r-sad-skyline-shows-pop-up-headlights_4.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 3"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">GTR Skyline</h5>
+                        <div class="d-flex justify-content-between">
+                          <p class="card-text text-muted mb-0">
+                            Starting Price
+                          </p>
+                          <p class="card-text text-muted mb-0">$95,000</p>
+                        </div>
+                        <div class="mt-auto text-end">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100 w-sm-auto"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                  <!-- Row 2 -->
+                  <div class="col">
+                    <div class="card h-100 shadow-sm">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbYiPCHsFp-3qW0tlWQPNQDDl2FTOXz7A2aA&s"
+                        class="card-img-top img-fluid"
+                        alt="Car 4"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Lamborghini Aventador</h5>
+                        <div class="d-flex justify-content-between">
+                          <p class="card-text text-muted mb-0">
+                            Starting Price
+                          </p>
+                          <p class="card-text text-muted mb-0">$350,000</p>
+                        </div>
+                        <div class="mt-auto text-end">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100 w-sm-auto"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm">
+                      <img
+                        src="https://img.gta5-mods.com/q75/images/ferrari-488-pista-19/79871d-1.png"
+                        class="card-img-top img-fluid"
+                        alt="Car 5"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ferrari 488</h5>
+                        <div class="d-flex justify-content-between">
+                          <p class="card-text text-muted mb-0">
+                            Starting Price
+                          </p>
+                          <p class="card-text text-muted mb-0">$300,000</p>
+                        </div>
+                        <div class="mt-auto text-end">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100 w-sm-auto"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm">
+                      <img
+                        src="https://www.lanceeastexotics.com.au/_next/image?url=https%3A%2F%2Fvirtualyard.com.au%2Fphotos%2FG6oWzPiHEJBniAWL9VnYWNRqDggB69cVKyZndcmZOke6xb5Z6zQI2jUiykWDxT6HRcQm2zKgGcgSzDWQojoLmrcK-0qh9Kxwayict5qvfFo.jpg%3Fcrop%3D0&w=3840&q=75"
+                        class="card-img-top img-fluid"
+                        alt="Car 6"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Bugatti Veyron</h5>
+                        <div class="d-flex justify-content-between">
+                          <p class="card-text text-muted mb-0">
+                            Starting Price
+                          </p>
+                          <p class="card-text text-muted mb-0">$1,700,000</p>
+                        </div>
+                        <div class="mt-auto text-end">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100 w-sm-auto"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <!-- Row 1 -->
+                  <div class="col">
+                    <div class="card h-100 shadow-sm">
+                      <img
+                        src="https://imgd.aeplcdn.com/1920x1080/n/cw/ec/95143/exterior-left-front-three-quarter.jpeg?q=80&q=80"
+                        class="card-img-top img-fluid"
+                        alt="Car 7"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">McLaren 720S</h5>
+                        <p class="card-text text-muted mb-0">
+                          Starting Price $300,000
+                        </p>
+                        <div class="mt-auto text-end">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100 w-sm-auto"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm">
+                      <img
+                        src="https://venteautoprestige.com/wp-content/uploads/2024/03/Toyota-Supra-MK4-blanche-trois-quarts-avant.webp"
+                        class="card-img-top img-fluid"
+                        alt="Car 8"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Toyota Supra</h5>
+                        <p class="card-text text-muted mb-0">
+                          Starting Price $50,000
+                        </p>
+                        <div class="mt-auto text-end">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100 w-sm-auto"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm">
+                      <img
+                        src="https://rmcmiami.com/wp-content/uploads/2021/03/DSC_3316-scaled.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 9"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Mazda RX-7</h5>
+                        <p class="card-text text-muted mb-0">
+                          Starting Price $40,000
+                        </p>
+                        <div class="mt-auto text-end">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100 w-sm-auto"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                  <!-- Row 2 -->
+                  <div class="col">
+                    <div class="card h-100 shadow-sm">
+                      <img
+                        src="https://cardealerstg.blob.core.windows.net/dixieford/vehicles/1045521/pictures/ece8eede-e21b-4c86-90ce-6534f2991b0a-gallery.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 10"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ford Mustang</h5>
+                        <p class="card-text text-muted mb-0">
+                          Starting Price $45,000
+                        </p>
+                        <div class="mt-auto text-end">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100 w-sm-auto"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm">
+                      <img
+                        src="https://www.exoticshunter.com/imagetag/656/main/l/Used-2021-Audi-R8-52-V10-w-the-Premium-Pack-Carbon-Exterior-Pack-+-Diamond-Stitch-1716923492.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 11"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Audi R8</h5>
+                        <p class="card-text text-muted mb-0">
+                          Starting Price $140,000
+                        </p>
+                        <div class="mt-auto text-end">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100 w-sm-auto"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm">
+                      <img
+                        src="https://vehicle-images.dealerinspire.com/2cce-18003201/WBS83FK06SCU19281/ceef681cf826805070787af14d540ed0.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 12"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">BMW M5</h5>
+                        <p class="card-text text-muted mb-0">
+                          Starting Price $110,000
+                        </p>
+                        <div class="mt-auto text-end">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100 w-sm-auto"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <!-- Row 1 -->
+                  <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                      <img
+                        src="https://autoimage.capitalone.com/dealer/2020-Nissan-370Z_Coupe-Sport-JN1AZ4EH5LM822969-dealersync_JN1AZ4EH5LM822969_50923-498ad5209d421759b18e40a1fa095033-bg_1.jpg?width=640&height=480"
+                        class="card-img-top img-fluid"
+                        alt="Car 13"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Nissan 370Z</h5>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="card-text text-muted mb-0">
+                            Starting Price $40,000
+                          </p>
+                        </div>
+                        <div class="mt-auto">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                      <img
+                        src="https://www.topgear.com/sites/default/files/images/news-article/2023/08/a7ed71f0537ba699576b1d35aee8e708/2024_Lexus_LC_Inspiration_001.jpg?w=1280&h=720"
+                        class="card-img-top img-fluid"
+                        alt="Car 14"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Lexus LC500</h5>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="card-text text-muted mb-0">
+                            Starting Price $100,000
+                          </p>
+                        </div>
+                        <div class="mt-auto">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                      <img
+                        src="https://www.exoticcarhacks.com/wp-content/uploads/2024/05/yBSbHGOi-scaled.jpeg"
+                        class="card-img-top img-fluid"
+                        alt="Car 15"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Jaguar F-Type</h5>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="card-text text-muted mb-0">
+                            Starting Price $85,000
+                          </p>
+                        </div>
+                        <div class="mt-auto">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                  <!-- Row 2 -->
+                  <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                      <img
+                        src="https://inv.assets.sincrod.com/RTT/Chevrolet/2024/6091123/default/ext_G8G_deg01.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 16"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Chevrolet Corvette</h5>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="card-text text-muted mb-0">
+                            Starting Price $60,000
+                          </p>
+                        </div>
+                        <div class="mt-auto">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                      <img
+                        src="https://vehicle-images.dealerinspire.com/11fd-110007650/2HGFE2F50NH531875/9c89731d3e9685d16e04fff70e524082.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 17"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Honda Civic</h5>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="card-text text-muted mb-0">
+                            Starting Price $35,000
+                          </p>
+                        </div>
+                        <div class="mt-auto">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                      <img
+                        src="https://cdn.dealeraccelerate.com/ag/1/13500/1342626/1920x1440/2021-acura-nsx"
+                        class="card-img-top img-fluid"
+                        alt="Car 18"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Acura NSX</h5>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="card-text text-muted mb-0">
+                            Starting Price $150,000
+                          </p>
+                        </div>
+                        <div class="mt-auto">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <!-- Row 1 -->
+                  <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                      <img
+                        src="https://www.autocritica.ro/wp-content/uploads/2024/02/Huayra-R-Evo-02-3-4-Frontale-2000x1333.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 19"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pagani Huayra</h5>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="card-text text-muted mb-0">
+                            Starting Price
+                          </p>
+                          <p class="card-text text-muted mb-0">$2,600,000</p>
+                        </div>
+                        <div class="mt-auto">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOmEWb_PRLnbvQ9PKihVpydrvCqJl2fRI_A&s"
+                        class="card-img-top img-fluid"
+                        alt="Car 20"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Koenigsegg Jesko</h5>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="card-text text-muted mb-0">
+                            Starting Price
+                          </p>
+                          <p class="card-text text-muted mb-0">$3,000,000</p>
+                        </div>
+                        <div class="mt-auto">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                      <img
+                        src="https://maxtondesign.com/eng_pl_Set-of-Splitters-Alfa-Romeo-Giulia-Quadrifoglio-22130_12.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 21"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">
+                          Alfa Romeo Giulia Quadrifoglio
+                        </h5>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="card-text text-muted mb-0">
+                            Starting Price
+                          </p>
+                          <p class="card-text text-muted mb-0">$80,000</p>
+                        </div>
+                        <div class="mt-auto">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                  <!-- Row 2 -->
+                  <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                      <img
+                        src="https://images.summitmedia-digital.com/topgear/images/2019/04/15/2018-subaru-wrx-sti-main-1555319740.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 22"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Subaru WRX STI</h5>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="card-text text-muted mb-0">
+                            Starting Price
+                          </p>
+                          <p class="card-text text-muted mb-0">$35,000</p>
+                        </div>
+                        <div class="mt-auto">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                      <img
+                        src="https://s1.cdn.autoevolution.com/images/news/2017-hyundai-genesis-coupe-could-have-480-hp-as-n-performance-94316_1.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 23"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Hyundai Genesis Coupe</h5>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="card-text text-muted mb-0">
+                            Starting Price
+                          </p>
+                          <p class="card-text text-muted mb-0">$25,000</p>
+                        </div>
+                        <div class="mt-auto">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 shadow-sm d-flex flex-column">
+                      <img
+                        src="https://www.renderhub.com/777angels777/nissan-350z-amuse-2005/nissan-350z-amuse-2005-01.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Car 24"
+                        style="height: 200px; object-fit: cover"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Nissan 350Z</h5>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="card-text text-muted mb-0">
+                            Starting Price
+                          </p>
+                          <p class="card-text text-muted mb-0">$30,000</p>
+                        </div>
+                        <div class="mt-auto">
+                          <button
+                            class="btn btn-danger btn-sm rounded-pill px-3 py-2 shadow-sm w-100"
+                          >
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#brandsCarousel"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#brandsCarousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
-      </section>
-
-      <!-- Features Section -->
-      <section id="features" class="py-5">
-        <div class="container">
-          <h2 class="text-center mb-4">Buy or Rent Cars</h2>
-          <div class="row g-4">
-            <div class="col-md-6 text-center">
-              <i class="bi bi-cart-fill display-4 text-primary mb-3"></i>
-              <h5 class="fw-bold">Buy Cars</h5>
-              <p>
-                Own your dream car with unbeatable prices and flexible financing
-                options.
-              </p>
-            </div>
-            <div class="col-md-6 text-center">
-              <i class="bi bi-key-fill display-4 text-primary mb-3"></i>
-              <h5 class="fw-bold">Rent Cars</h5>
-              <p>
-                Wide selection of rental cars for your next adventure or
-                business trip.
-              </p>
-            </div>
-          </div>
+        <!-- View More Button with Down Arrow Icon aligned to the end -->
+        <div class="text-end mt-4">
+          <button
+            class="btn btn-primary d-flex justify-content-end align-items-center mx-auto"
+          >
+            View More
+            <!-- Down arrow icon (↓) -->
+            <span class="ms-2">↓</span>
+          </button>
         </div>
       </section>
+      <div class="container my-5">
+        <!-- Premium Collection Title -->
+        <div class="d-flex justify-content-center mb-4">
+          <h2 class="display-4 text-dark fw-bold">Premium Car Collection</h2>
+        </div>
 
-      <!-- All Car Models Section -->
-      <section class="py-5">
-        <div class="container">
-          <h2 class="text-center mb-4">All Car Models</h2>
-          <div class="row g-4">
-            <!-- Row 1 -->
-            <div class="col-md-4">
-              <img
-                src="/path/to/car1.jpg"
-                class="img-fluid rounded"
-                alt="Car Model 1"
-              />
+        <!-- Row for Premium Cars -->
+        <div class="row gx-4">
+          <!-- Left Car (Pagani Huayra) -->
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card shadow-sm border-0">
+              <div
+                class="img-container"
+                style="height: 250px; overflow: hidden"
+              >
+                <img
+                  src="https://hips.hearstapps.com/hmg-prod/images/pagani-huayra-bc-roadster-121-1564501509.jpg?crop=0.752xw:0.613xh;0.136xw,0.259xh&resize=1200:*"
+                  class="card-img-top w-100 object-fit-cover"
+                  alt="Pagani Huayra"
+                  style="height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title mb-0">Pagani Huayra</h5>
+                  <p class="card-text text-muted mb-0">$2,600,000</p>
+                </div>
+
+                <!-- Specifications Section (MPH and Top Speed on the same line) -->
+                <div class="d-flex justify-content-between mt-4">
+                  <div class="col-6">
+                    <h6 class="spec-title mb-0">MPH:</h6>
+                    <p class="spec-value mb-0">2.8 sec (0-60 mph)</p>
+                  </div>
+                  <div class="col-6">
+                    <h6 class="spec-title mb-0">Top Speed:</h6>
+                    <p class="spec-value mb-0">238 mph</p>
+                  </div>
+                </div>
+
+                <!-- Button at the end of the text (right-aligned) -->
+                <div class="d-flex justify-content-end mt-3">
+                  <button
+                    class="btn btn-outline-primary px-4 py-2 rounded-pill shadow-lg hover-shadow-lg"
+                  >
+                    View Detail
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="col-md-4">
-              <img
-                src="/path/to/car2.jpg"
-                class="img-fluid rounded"
-                alt="Car Model 2"
-              />
-            </div>
-            <div class="col-md-4">
-              <img
-                src="/path/to/car3.jpg"
-                class="img-fluid rounded"
-                alt="Car Model 3"
-              />
-            </div>
-            <!-- Row 2 -->
-            <div class="col-md-4">
-              <img
-                src="/path/to/car4.jpg"
-                class="img-fluid rounded"
-                alt="Car Model 4"
-              />
-            </div>
-            <div class="col-md-4">
-              <img
-                src="/path/to/car5.jpg"
-                class="img-fluid rounded"
-                alt="Car Model 5"
-              />
-            </div>
-            <div class="col-md-4">
-              <img
-                src="/path/to/car6.jpg"
-                class="img-fluid rounded"
-                alt="Car Model 6"
-              />
-            </div>
-            <!-- Row 3 -->
-            <div class="col-md-4">
-              <img
-                src="/path/to/car7.jpg"
-                class="img-fluid rounded"
-                alt="Car Model 7"
-              />
-            </div>
-            <div class="col-md-4">
-              <img
-                src="/path/to/car8.jpg"
-                class="img-fluid rounded"
-                alt="Car Model 8"
-              />
-            </div>
-            <div class="col-md-4">
-              <img
-                src="/path/to/car9.jpg"
-                class="img-fluid rounded"
-                alt="Car Model 9"
-              />
+          </div>
+
+          <!-- Right Car (Bugatti Veyron) -->
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card shadow-sm border-0">
+              <div
+                class="img-container"
+                style="height: 250px; overflow: hidden"
+              >
+                <img
+                  src="https://robbreport.com/wp-content/uploads/2024/06/carbonvitesse01.jpg?w=800"
+                  class="card-img-top w-100 object-fit-cover"
+                  alt="Bugatti Veyron"
+                  style="height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title mb-0">Bugatti Veyron</h5>
+                  <p class="card-text text-muted mb-0">$2,000,000</p>
+                </div>
+
+                <!-- Specifications Section (MPH and Top Speed on the same line) -->
+                <div class="d-flex justify-content-between mt-4">
+                  <div class="col-6">
+                    <h6 class="spec-title mb-0">MPH:</h6>
+                    <p class="spec-value mb-0">2.5 sec (0-60 mph)</p>
+                  </div>
+                  <div class="col-6">
+                    <h6 class="spec-title mb-0">Top Speed:</h6>
+                    <p class="spec-value mb-0">267 mph</p>
+                  </div>
+                </div>
+
+                <!-- Button at the end of the text (right-aligned) -->
+                <div class="d-flex justify-content-end mt-3">
+                  <button
+                    class="btn btn-outline-primary px-4 py-2 rounded-pill shadow-lg hover-shadow-lg"
+                  >
+                    View Detail
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Premium Cars Section -->
+      </div>
+      <!-- Subscription Section -->
       <section class="py-5 bg-light">
         <div class="container">
-          <h2 class="text-center mb-4">Premium Cars</h2>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <img
-                src="/path/to/premium1.jpg"
-                class="img-fluid rounded"
-                alt="Premium Car 1"
-              />
-              <p>Top Speed: 220 mph | Horsepower: 600 hp | Price: $100,000</p>
-            </div>
-            <div class="col-md-4">
-              <img
-                src="/path/to/premium2.jpg"
-                class="img-fluid rounded"
-                alt="Premium Car 2"
-              />
-              <p>Top Speed: 200 mph | Horsepower: 550 hp | Price: $90,000</p>
-            </div>
-            <div class="col-md-4">
-              <img
-                src="/path/to/premium3.jpg"
-                class="img-fluid rounded"
-                alt="Premium Car 3"
-              />
-              <p>Top Speed: 210 mph | Horsepower: 580 hp | Price: $95,000</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Rent Cars Section -->
-      <section class="py-5">
-        <div class="container">
-          <h2 class="text-center mb-4">Rent a Car</h2>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <img
-                src="/path/to/rent1.jpg"
-                class="img-fluid rounded"
-                alt="Rental Car 1"
-              />
-              <p>Affordable daily rates for economy cars.</p>
-            </div>
-            <div class="col-md-4">
-              <img
-                src="/path/to/rent2.jpg"
-                class="img-fluid rounded"
-                alt="Rental Car 2"
-              />
-              <p>Spacious SUVs for family trips.</p>
-            </div>
-            <div class="col-md-4">
-              <img
-                src="/path/to/rent3.jpg"
-                class="img-fluid rounded"
-                alt="Rental Car 3"
-              />
-              <p>Luxury cars for special occasions.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+          <div class="row justify-content-center align-items-center">
+            <!-- Text Content and Form -->
+            <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+              <h2 class="font-semibold text-4xl text-dark">
+                Join our mailing list!
+              </h2>
+              <span class="block mt-3 text-muted"
+                >Stay updated on all news that's happening in the world of
+                cars.</span
+              >
 
-      <!-- Discounts Section -->
-      <section class="py-5 bg-light">
-        <div class="container text-center">
-          <h2 class="mb-4">Special Discounts</h2>
-          <p class="fs-4 text-danger fw-bold">
-            Celebrate Chinese New Year with a 5% discount on all purchases!
-          </p>
-          <p class="fs-5">Additional offers:</p>
-          <ul class="list-unstyled">
-            <li>10% off on premium car rentals.</li>
-            <li>Flat $500 off on your first car purchase.</li>
-            <li>Special weekend discounts for SUV rentals.</li>
-          </ul>
-          <a href="#top" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+              <!-- Subscription Form -->
+              <form class="mt-4 position-relative">
+                <input
+                  class="form-control rounded-pill px-4 py-2"
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="position-absolute top-50 end-0 translate-middle-y btn btn-primary rounded-pill p-2"
+                >
+                  <i class="bi bi-arrow-right"></i>
+                  <!-- Bootstrap icon for arrow -->
+                </button>
+              </form>
+
+              <!-- Terms and Conditions List -->
+              <ul class="mt-4">
+                <li class="d-flex align-items-center mb-2">
+                  <span class="badge bg-info text-dark rounded-pill me-2"
+                    >01</span
+                  >
+                  <span class="text-muted"
+                    >By clicking subscribe, you agree to receive news,
+                    promotions, and offers by email from Rami AutoShop.</span
+                  >
+                </li>
+                <li class="d-flex align-items-center">
+                  <span class="badge bg-danger text-white rounded-pill me-2"
+                    >02</span
+                  >
+                  <span class="text-muted"
+                    >Your information will be used in accordance with our
+                    privacy policy.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-12 col-lg-7">
+              <img
+                src="https://f1rst-motors.s3.me-central-1.amazonaws.com/static/laferrarinewsletter.png"
+                alt="F1rst Motors"
+                class="img-fluid rounded-3"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <footer class="bg-dark text-white py-3">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <!-- Logo and Company Info -->
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start mb-2 mb-md-0"
+          >
+            <div class="d-flex align-items-center">
+              <img
+                src="/picture/logo.jpg"
+                alt="Rami Autoshop Logo"
+                class="img-fluid rounded-circle"
+                style="max-height: 50px"
+              />
+              <span class="ms-3 fs-6">© 2021 Rami Autoshop, inc</span>
+            </div>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end"
+          >
+            <ul class="list-unstyled d-flex gap-3 mb-0">
+              <!-- Twitter Icon -->
+              <li>
+                <a
+                  href="#"
+                  class="text-white fs-4"
+                  title="Follow us on Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <!-- Instagram Icon-->
+              <li>
+                <a
+                  href="#"
+                  class="text-white fs-4"
+                  title="Follow us on Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <!-- Facebook Icon -->
+              <li>
+                <a
+                  href="#"
+                  class="text-white fs-4"
+                  title="Follow us on Facebook"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
